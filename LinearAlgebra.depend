@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1504840935 source:c:\users\kpx\documents\c++\code blocks projects\linearalgebra\main.cpp
+	<iostream>
+	"poly.h"
+	"Matrix.h"
+
+1504841017 c:\users\kpx\documents\c++\code blocks projects\linearalgebra\include\poly.h
+	<iostream>
+	<vector>
+	<string>
+	<math.h>
+	<cmath>
+	<Windows.h>
+	<algorithm>
+
+1504841003 c:\users\kpx\documents\c++\code blocks projects\linearalgebra\include\matrix.h
+	<iostream>
+	<vector>
+	<string>
+	<cmath>
+
+1504840984 source:c:\users\kpx\documents\c++\code blocks projects\linearalgebra\src\matrix.cpp
+	"poly.h"
+
+1504841053 source:c:\users\kpx\documents\c++\code blocks projects\linearalgebra\src\poly.cpp
+	"poly.h"
+
