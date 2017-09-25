@@ -16,4 +16,4 @@ ans - matrix of last answer<br/>
 inter - statistical interpolation using method of least squares<br/>
 solve - solve a system of linear equations<br/>
 quad - solve a quadratic equation<br/>
-exit - cancel a command or exit from the program<br/>;
+exit - cancel a command or exit from the program<br/>
