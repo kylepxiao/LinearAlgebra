@@ -39,6 +39,9 @@ class Matrix
         std::vector< std::vector<double> > A;
         std::vector< std::vector<double> > B;
         std::vector< std::vector<double> > C;
+        std::vector< std::vector<double> > D;
+        std::vector< std::vector<double> > E;
+        std::vector< std::vector<double> > F;
         std::vector< std::vector<double> > ans;
 };
 

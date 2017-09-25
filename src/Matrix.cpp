@@ -54,7 +54,7 @@ void Matrix::fillmat(int mat)
                     tempvector.clear();
                     for (int k=0; k<c; k++)
                     {
-                        cout << "A" << i+1 << "," << k+1 << "= ";
+                        cout << "B" << i+1 << "," << k+1 << "= ";
                         cin>>str_temp;
                         if(str_temp == "exit"){
                             return;
@@ -73,7 +73,7 @@ void Matrix::fillmat(int mat)
                     tempvector.clear();
                     for (int k=0; k<c; k++)
                     {
-                        cout << "A" << i+1 << "," << k+1 << "= ";
+                        cout << "C" << i+1 << "," << k+1 << "= ";
                         cin>>str_temp;
                         if(str_temp == "exit"){
                             return;
@@ -82,6 +82,63 @@ void Matrix::fillmat(int mat)
                         tempvector.push_back(temp);
                     }
                     C.push_back(tempvector);
+                }
+            }
+            else if (mat == 4)
+            {
+                D.clear();
+                for (int i=0; i<r; i++)
+                {
+                    tempvector.clear();
+                    for (int k=0; k<c; k++)
+                    {
+                        cout << "D" << i+1 << "," << k+1 << "= ";
+                        cin>>str_temp;
+                        if(str_temp == "exit"){
+                            return;
+                        }
+                        temp = (double) stod(str_temp.c_str());
+                        tempvector.push_back(temp);
+                    }
+                    D.push_back(tempvector);
+                }
+            }
+            else if (mat == 5)
+            {
+                E.clear();
+                for (int i=0; i<r; i++)
+                {
+                    tempvector.clear();
+                    for (int k=0; k<c; k++)
+                    {
+                        cout << "E" << i+1 << "," << k+1 << "= ";
+                        cin>>str_temp;
+                        if(str_temp == "exit"){
+                            return;
+                        }
+                        temp = (double) stod(str_temp.c_str());
+                        tempvector.push_back(temp);
+                    }
+                    E.push_back(tempvector);
+                }
+            }
+            else if (mat == 6)
+            {
+                F.clear();
+                for (int i=0; i<r; i++)
+                {
+                    tempvector.clear();
+                    for (int k=0; k<c; k++)
+                    {
+                        cout << "F" << i+1 << "," << k+1 << "= ";
+                        cin>>str_temp;
+                        if(str_temp == "exit"){
+                            return;
+                        }
+                        temp = (double) stod(str_temp.c_str());
+                        tempvector.push_back(temp);
+                    }
+                    F.push_back(tempvector);
                 }
             }
             else
@@ -131,9 +188,21 @@ int Matrix::matconverter(std::vector< std::vector<double> > mat)
     {
         return 3;
     }
-    else if (mat==ans)
+    else if (mat==D)
     {
         return 4;
+    }
+    else if (mat==E)
+    {
+        return 5;
+    }
+    else if (mat==F)
+    {
+        return 6;
+    }
+    else if (mat==ans)
+    {
+        return 7;
     }
     else
     {
@@ -190,6 +259,18 @@ std::vector< std::vector<double> > Matrix::setmat(int mat)
         return C;
     }
     if (mat==4)
+    {
+        return D;
+    }
+    if (mat==5)
+    {
+        return E;
+    }
+    if (mat==6)
+    {
+        return F;
+    }
+    if (mat==7)
     {
         return ans;
     }

@@ -56,7 +56,7 @@ int main()
         }
         else if (userans == "fill")
         {
-            cout << "Which matrix would you like to edit (a, b, or c)?\n";
+            cout << "Which matrix would you like to edit (a, b, c, d, e, or f)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
                 if (mat1 == "a")
@@ -71,6 +71,18 @@ int main()
                 {
                     m.fillmat(3);
                 }
+                else if (mat1 == "d")
+                {
+                    m.fillmat(4);
+                }
+                else if (mat1 == "e")
+                {
+                    m.fillmat(5);
+                }
+                else if (mat1 == "f")
+                {
+                    m.fillmat(6);
+                }
                 else
                 {
                     cerr<<"Invalid matrix."<<endl;
@@ -80,7 +92,7 @@ int main()
 
         else if(userans == "print")
         {
-            cout << "Which matrix would you like to print (a, b, or c)?\n";
+            cout << "Which matrix would you like to print (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
                 if (mat1 == "a")
@@ -94,6 +106,18 @@ int main()
                 else if (mat1 == "c")
                 {
                 m.printmat(3);
+                }
+                else if (mat1 == "d")
+                {
+                m.printmat(4);
+                }
+                else if (mat1 == "e")
+                {
+                m.printmat(5);
+                }
+                else if (mat1 == "f")
+                {
+                m.printmat(6);
                 }
                 else if (mat1 == "ans")
                 {
@@ -110,7 +134,7 @@ int main()
             cout << "What is the factor you want to multiply by?\n";
             cin>>str_factor;
             if(str_factor != "exit"){
-                cout << "What matrix would you like to multiply by(a, b, or c)?\n";
+                cout << "What matrix would you like to multiply by(a, b, c, d, e, f, or ans)?\n";
                 cin>>mat2;
                 if(mat2 != "exit"){
                     //mat1
@@ -128,9 +152,21 @@ int main()
                     {
                         num2 = 3;
                     }
-                    else if(mat2 == "ans")
+                    else if(mat2 == "d")
                     {
                         num2 = 4;
+                    }
+                    else if(mat2 == "e")
+                    {
+                        num2 = 5;
+                    }
+                    else if(mat2 == "f")
+                    {
+                        num2 = 6;
+                    }
+                    else if(mat2 == "ans")
+                    {
+                        num2 = 7;
                     }
                     else
                     {
@@ -147,10 +183,10 @@ int main()
         }
         else if (userans == "add")
         {
-            cout << "First matrix (a, b, or c)?\n";
+            cout << "First matrix (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
-                cout << "Second matrix (a, b, or c)?\n";
+                cout << "Second matrix (a, b, c, d, e, f, or ans)?\n";
                 cin>>mat2;
                 if(mat2 != "exit"){
                     //mat1
@@ -166,9 +202,21 @@ int main()
                     {
                         num1 = 3;
                     }
-                    else if(mat1 == "ans")
+                    else if(mat1 == "d")
                     {
                         num1 = 4;
+                    }
+                    else if(mat1 == "e")
+                    {
+                        num1 = 5;
+                    }
+                    else if(mat1 == "f")
+                    {
+                        num1 = 6;
+                    }
+                    else if(mat1 == "ans")
+                    {
+                        num1 = 7;
                     }
                     else
                     {
@@ -188,9 +236,21 @@ int main()
                     {
                         num2 = 3;
                     }
-                    else if(mat2 == "ans")
+                    else if(mat2 == "d")
                     {
                         num2 = 4;
+                    }
+                    else if(mat2 == "e")
+                    {
+                        num2 = 5;
+                    }
+                    else if(mat2 == "f")
+                    {
+                        num2 = 6;
+                    }
+                    else if(mat2 == "ans")
+                    {
+                        num2 = 7;
                     }
                     else
                     {
@@ -207,10 +267,10 @@ int main()
         }
         else if (userans == "sub")
         {
-            cout << "First matrix (a, b, or c)?\n";
+            cout << "First matrix (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
-                cout << "Second matrix (a, b, or c)?\n";
+                cout << "Second matrix (a, b, c, d, e, f, or ans)?\n";
                 cin>>mat2;
                 if(mat2 != "exit"){
                     //mat1
@@ -226,9 +286,21 @@ int main()
                     {
                         num1 = 3;
                     }
-                    else if(mat1 == "ans")
+                    else if(mat1 == "d")
                     {
                         num1 = 4;
+                    }
+                    else if(mat1 == "e")
+                    {
+                        num1 = 5;
+                    }
+                    else if(mat1 == "f")
+                    {
+                        num1 = 6;
+                    }
+                    else if(mat1 == "ans")
+                    {
+                        num1 = 7;
                     }
                     else
                     {
@@ -248,9 +320,21 @@ int main()
                     {
                         num2 = 3;
                     }
-                    else if(mat2 == "ans")
+                    else if(mat2 == "d")
                     {
                         num2 = 4;
+                    }
+                    else if(mat2 == "e")
+                    {
+                        num2 = 5;
+                    }
+                    else if(mat2 == "f")
+                    {
+                        num2 = 6;
+                    }
+                    else if(mat2 == "ans")
+                    {
+                        num2 = 7;
                     }
                     else
                     {
@@ -267,10 +351,10 @@ int main()
         }
         else if (userans == "mult")
         {
-            cout << "First matrix (a, b, or c)?\n";
+            cout << "First matrix (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
-                cout << "Second matrix (a, b, or c)?\n";
+                cout << "Second matrix (a, b, c, d, e, f, or ans)?\n";
                 cin>>mat2;
                 if(mat2 != "exit"){
                     //mat1
@@ -286,9 +370,21 @@ int main()
                     {
                         num1 = 3;
                     }
-                    else if(mat1 == "ans")
+                    else if(mat1 == "d")
                     {
                         num1 = 4;
+                    }
+                    else if(mat1 == "e")
+                    {
+                        num1 = 5;
+                    }
+                    else if(mat1 == "f")
+                    {
+                        num1 = 6;
+                    }
+                    else if(mat1 == "ans")
+                    {
+                        num1 = 7;
                     }
                     else
                     {
@@ -308,9 +404,21 @@ int main()
                     {
                         num2 = 3;
                     }
-                    else if(mat2 == "ans")
+                    else if(mat2 == "d")
                     {
                         num2 = 4;
+                    }
+                    else if(mat2 == "e")
+                    {
+                        num2 = 5;
+                    }
+                    else if(mat2 == "f")
+                    {
+                        num2 = 6;
+                    }
+                    else if(mat2 == "ans")
+                    {
+                        num2 = 7;
                     }
                     else
                     {
@@ -328,7 +436,7 @@ int main()
 
         else if (userans == "trans")
         {
-            cout << "Which matrix would you like to transpose (a, b, or c)?\n";
+            cout << "Which matrix would you like to transpose (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
                 if (mat1 == "a")
@@ -346,9 +454,24 @@ int main()
                     m.ans = m.transposeloop(3);
                     m.printans(m.ans);
                 }
-                else if(mat1 == "ans")
+                else if(mat1 == "d")
                 {
                     m.ans = m.transposeloop(4);
+                    m.printans(m.ans);
+                }
+                else if(mat1 == "e")
+                {
+                    m.ans = m.transposeloop(5);
+                    m.printans(m.ans);
+                }
+                else if(mat1 == "f")
+                {
+                    m.ans = m.transposeloop(6);
+                    m.printans(m.ans);
+                }
+                else if(mat1 == "ans")
+                {
+                    m.ans = m.transposeloop(7);
                     m.printans(m.ans);
                 }
                 else
@@ -360,7 +483,7 @@ int main()
 
         else if (userans == "invert")
         {
-            cout << "Which matrix would you like to invert (a, b, or c)?\n";
+            cout << "Which matrix would you like to invert (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
                 if (mat1 == "a")
@@ -378,9 +501,24 @@ int main()
                     m.ans = m.invert(3);
                     m.printans(m.ans);
                 }
-                else if(mat1 == "ans")
+                else if(mat1 == "d")
                 {
                     m.ans = m.invert(4);
+                    m.printans(m.ans);
+                }
+                else if(mat1 == "e")
+                {
+                    m.ans = m.invert(5);
+                    m.printans(m.ans);
+                }
+                else if(mat1 == "f")
+                {
+                    m.ans = m.invert(6);
+                    m.printans(m.ans);
+                }
+                else if(mat1 == "ans")
+                {
+                    m.ans = m.invert(7);
                     m.printans(m.ans);
                 }
                 else
@@ -392,7 +530,7 @@ int main()
 
         else if (userans == "det")
         {
-            cout << "Which matrix would you like to find the determinant of (a, b, or c)?\n";
+            cout << "Which matrix would you like to find the determinant of (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
                 if (mat1 == "a")
@@ -407,9 +545,21 @@ int main()
                 {
                     cout<<(m.det(m.setmat(3)))<<endl;
                 }
-                else if(mat1 == "ans")
+                else if(mat1 == "d")
                 {
                     cout<<(m.det(m.setmat(4)))<<endl;
+                }
+                else if(mat1 == "e")
+                {
+                    cout<<(m.det(m.setmat(5)))<<endl;
+                }
+                else if(mat1 == "f")
+                {
+                    cout<<(m.det(m.setmat(6)))<<endl;
+                }
+                else if(mat1 == "ans")
+                {
+                    cout<<(m.det(m.setmat(7)))<<endl;
                 }
                 else
                 {
@@ -421,10 +571,10 @@ int main()
 
         else if (userans == "cross")
         {
-            cout << "First matrix (a, b, or c)?\n";
+            cout << "First matrix (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
-                cout << "Second matrix (a, b, or c)?\n";
+                cout << "Second matrix (a, b, c, d, e, f, or ans)?\n";
                 cin>>mat2;
                 if(mat2 != "exit"){
                     //mat1
@@ -440,9 +590,21 @@ int main()
                     {
                         num1 = 3;
                     }
-                    else if(mat1 == "ans")
+                    else if(mat1 == "d")
                     {
                         num1 = 4;
+                    }
+                    else if(mat1 == "e")
+                    {
+                        num1 = 5;
+                    }
+                    else if(mat1 == "f")
+                    {
+                        num1 = 6;
+                    }
+                    else if(mat1 == "ans")
+                    {
+                        num1 = 7;
                     }
                     else
                     {
@@ -462,9 +624,21 @@ int main()
                     {
                         num2 = 3;
                     }
-                    else if(mat2 == "ans")
+                    else if(mat2 == "d")
                     {
                         num2 = 4;
+                    }
+                    else if(mat2 == "e")
+                    {
+                        num2 = 5;
+                    }
+                    else if(mat2 == "f")
+                    {
+                        num2 = 6;
+                    }
+                    else if(mat2 == "ans")
+                    {
+                        num2 = 7;
                     }
                     else
                     {
@@ -482,10 +656,10 @@ int main()
 
         else if (userans == "dot")
         {
-            cout << "First matrix (a, b, or c)?\n";
+            cout << "First matrix (a, b, c, d, e, f, or ans)?\n";
             cin>>mat1;
             if(mat1 != "exit"){
-                cout << "Second matrix (a, b, or c)?\n";
+                cout << "Second matrix (a, b, c, d, e, f, or ans)?\n";
                 cin>>mat2;
                 if(mat2 != "exit"){
                     //mat1
@@ -501,9 +675,21 @@ int main()
                     {
                         num1 = 3;
                     }
-                    else if(mat1 == "ans")
+                    else if(mat1 == "d")
                     {
                         num1 = 4;
+                    }
+                    else if(mat1 == "e")
+                    {
+                        num1 = 5;
+                    }
+                    else if(mat1 == "f")
+                    {
+                        num1 = 6;
+                    }
+                    else if(mat1 == "ans")
+                    {
+                        num1 = 7;
                     }
                     else
                     {
@@ -523,9 +709,21 @@ int main()
                     {
                         num2 = 3;
                     }
-                    else if(mat2 == "ans")
+                    else if(mat2 == "d")
                     {
                         num2 = 4;
+                    }
+                    else if(mat2 == "e")
+                    {
+                        num2 = 5;
+                    }
+                    else if(mat2 == "f")
+                    {
+                        num2 = 6;
+                    }
+                    else if(mat2 == "ans")
+                    {
+                        num2 = 7;
                     }
                     else
                     {

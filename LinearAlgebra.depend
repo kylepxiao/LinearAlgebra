@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1504840935 source:c:\users\kpx\documents\c++\code blocks projects\linearalgebra\main.cpp
+1506301230 source:c:\users\kpx\documents\c++\code blocks projects\linearalgebra\main.cpp
 	<iostream>
 	"poly.h"
 	"Matrix.h"
@@ -13,14 +13,14 @@
 	<Windows.h>
 	<algorithm>
 
-1504841003 c:\users\kpx\documents\c++\code blocks projects\linearalgebra\include\matrix.h
+1506300869 c:\users\kpx\documents\c++\code blocks projects\linearalgebra\include\matrix.h
 	<iostream>
 	<vector>
 	<string>
 	<cmath>
 
-1504840984 source:c:\users\kpx\documents\c++\code blocks projects\linearalgebra\src\matrix.cpp
-	"poly.h"
+1506301851 source:c:\users\kpx\documents\c++\code blocks projects\linearalgebra\src\matrix.cpp
+	"Matrix.h"
 
 1504841053 source:c:\users\kpx\documents\c++\code blocks projects\linearalgebra\src\poly.cpp
 	"poly.h"
