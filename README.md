@@ -2,6 +2,7 @@
 A C++ application for solving complex linear systems, such as least square interpolation, matrices, and equations.
 
 # Usage
+fill - input matrix and store in memory<br/>
 print - print a matrix in memory onto the screen<br/>
 add - add two matrices together<br/>
 sub - subtract one matrix from another<br/>
